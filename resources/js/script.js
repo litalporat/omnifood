@@ -1,39 +1,49 @@
-$(document).ready(function(){
+$(document).ready(function () {
     /* demo
     $('h1').click(function(){
         $(this).css('background-color', '#ff0000');
     })*/
-    
     //sticky navigatoin
-    $('.js--section-features').waypoint(function(direction){
-        if(direction == "down"){
-            $('nav').addClass('sticky');
-        }
-        else{
-            $('nav').removeClass('sticky');
-        }
-    }, {
-        offset: '60px'
+    // $('.js--section-features').waypoint(
+    //     function (direction) {
+    //         if (direction == 'down') {
+    //             $('nav').addClass('sticky');
+    //         } else {
+    //             $('nav').removeClass('sticky');
+    //         }
+    //     },
+    //     {
+    //         offset: '60px',
+    //     }
+    // );
+    // var waypoints = $('#handler-first').waypoint(
+    //     function (direction) {
+    //         notify(this.element.id + ' hit 25% from top of window');
+    //     },
+    //     {
+    //         offset: '25%',
+    //     }
+    // );
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document
+                .querySelector(e.target.getAttribute('href'))
+                .scrollIntoView({
+                    behavior: 'smooth',
+                });
+        });
     });
 
-    
-    var waypoints = $('#handler-first').waypoint(function(direction) {
-        notify(this.element.id + ' hit 25% from top of window') 
-      }, {
-        offset: '25%'
-    })
-
-    //scroll on buttons
-    $('.js--scroll-to-plans').click(function(){
-        $('html, body').animate({scrollTop: $('.js--section-plans').offset().top},1000);
-    });
-    
-    $('.js--scroll-to-start').click(function(){
-        $('html, body').animate({scrollTop: $('.js--section-features').offset().top},1000);
-    }); 
-
+    // $('.js--scroll-to-start').click(function () {
+    //     $('html, body').animate(
+    //         { scrollTop: $('.js--section-features').offset().top },
+    //         1000
+    //     );
+    // });
     //navigation scroll
-   /* $(function(){
+    /* $(function(){
         $('a[href*=#]:not([href=#])').click(function(){
             if(location.pathname.replace(/^\//,'')== this.pathname.replace(/^\//,'') && location.hostname== this.hostname){
                 var target = $(this.hash);
@@ -46,5 +56,4 @@ $(document).ready(function(){
                 }
             });
     });*/
-    
 });
