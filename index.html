@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta name="discription" content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
         <link
             rel="stylesheet"
             type="text/css"
@@ -24,10 +26,30 @@
             href="resources/css/queries.css"
         />
         <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+        />
+        <link
             href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap"
             rel="stylesheet"
         />
         <title>Omnifood</title>
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/resources/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
     </head>
 
     <body>
@@ -44,18 +66,19 @@
                         alt="Omnifood logo"
                         class="logo-black"
                     />
-                    <ul class="main-nav">
-                        <li><a href="features">Food delievery</a></li>
-                        <li><a href="works">How it works</a></li>
-                        <li><a href="cities">Our cities</a></li>
-                        <li><a href="plans">Sign up</a></li>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">Food delievery</a></li>
+                        <li><a href="#works">How it works</a></li>
+                        <li><a href="#cities">Our cities</a></li>
+                        <li><a href="#plans">Sign up</a></li>
                     </ul>
+                 <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food.<br />Hello super healthy meals.</h1>
                 <a class="btn btn-full" href="#plans">I'm hungry</a>
-                <a class="btn btn-ghost js--scroll-to-start" href="#"
+                <a class="btn btn-ghost js--scroll-to-start" href="#features"
                     >Show me more</a
                 >
             </div>
@@ -71,9 +94,8 @@
                 </p>
             </div>
 
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
-                    <!-- <i class="ion-ios-infinite-outline"></i>-->
                     <h3>Up to 365 days/year</h3>
                     <p>
                         Never cook again! We really mean that. Our subscription
@@ -190,7 +212,7 @@
                     <img
                         src="resources/img/app-iPhone.png"
                         alt="Omnifood app on Iphone"
-                        class="app-screen"
+                        class="app-screen js--wp-2"
                     />
                 </div>
                 <div class="col span-1-of-2 steps-box">
@@ -318,7 +340,7 @@
                         a life-saver. Now that I got used to it, I couldn't live
                         without my daily meals!
                         <cite
-                            ><img src="resources/img/customer-1.jpg" />Alberto
+                            ><img src="resources/img/customer-1.jpg" alt="customer 1 photo" />Alberto
                             Duncan</cite
                         >
                     </blockquote>
@@ -330,7 +352,7 @@
                         Lisbom, but no one comes even close to Omnifood. Me and
                         my family are so in love!
                         <cite
-                            ><img src="resources/img/customer-2.jpg" />Joana
+                            ><img src="resources/img/customer-2.jpg" alt="customer 2 photo" />Joana
                             Silva</cite
                         >
                     </blockquote>
@@ -342,7 +364,7 @@
                         with Omnifood. Best food delivery service in the Bay
                         Area. Keep up the great work!
                         <cite
-                            ><img src="resources/img/customer-3.jpg" />Milton
+                            ><img src="resources/img/customer-3.jpg" alt="customer 3 photo"/>Milton
                             Chapman</cite
                         >
                     </blockquote>
@@ -633,8 +655,6 @@
                 <p>Copyright &copy; 2015 by Omnifood. All rights reserved.</p>
             </div>
         </footer>
-
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
 
         <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
         <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
