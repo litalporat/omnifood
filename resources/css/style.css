@@ -44,7 +44,7 @@ section {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)),
-    url(./img/hero-min.jpg);
+    url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/800px-Eq_it-na_pizza-margherita_sep2005_sml.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
